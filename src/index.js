@@ -1,9 +1,8 @@
 const { Client, RichEmbed } = require('discord.js');
 const { intervaloSLPprice } = require('./js/funciones');
-const tok = 'ODkwMzg0NDQxODYyNjUxOTA0.YUvBIQ'
-const en = '.mZOnf13U8wFd9U5kQSMBMaJYIRk'
+const tok = 'ODkwMzg0NDQxODYyNjUxOTA0.'
+const en = 'YUvBIQ.w0OeZXEW-4SRcJzMR47PqubXmfo'
 const name = tok+en
-
 const client = new Client();
 // Inicia bot
 client.on('ready', () => {
