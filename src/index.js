@@ -1,6 +1,8 @@
 const { Client, RichEmbed } = require('discord.js');
 const { intervaloSLPprice } = require('./js/funciones');
-require('dotenv').config();
+const tok = 'ODkwMzg0NDQxODYyNjUxOTA0.YUvBIQ'
+const en = '.mZOnf13U8wFd9U5kQSMBMaJYIRk'
+const name = tok+en
 
 const client = new Client();
 // Inicia bot
@@ -10,7 +12,7 @@ client.on('ready', () => {
   client.user.setStatus('online');
   intervaloSLPprice(client)
 });
-client.login(process.env.DISCORD_TOKEN);
+client.login(name);
 module.exports= {
   client
 }
